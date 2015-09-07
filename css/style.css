@@ -1,3 +1,67 @@
 body {
   font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+
+/* TODO: Just for Header */
+.header {
+
+}
+
+.header ul li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.header a {
+  color: black;
+}
+
+.header a i {
+  color: red;
+}
+/* TODO: Just for Think */
+.think {
+  margin-top: 50px;
+}
+
+/* TODO: Just for main */
+.main {
+  margin: 50px;
+}
+
+.main h2 {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+.main table {
+  margin: auto;
+}
+.main table tr:first-child {
+  border-bottom: solid black 1px;
+}
+
+.main table td:first-child {
+  border-right: solid black 1px;
+}
+
+.main table td {
+  padding: 30px;
+  font-size: 25px;
+}
+.main .row {
+  border-right:
+}
+/* TODO: Just for footer */
+.footer {
+  padding: 50px;
+}
+
+.footer p {
+  font-size: 20px;
+}
+
+.footer p i {
+  color: red;
 }
