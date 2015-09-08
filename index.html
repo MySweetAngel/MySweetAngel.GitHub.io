@@ -30,6 +30,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I Love Sweet Angel</title>
     <link rel="icon" type="image/gif" href="lib/images/SweetAngel.jpg">
+    <meta name="author" content="Nguyen Trung Tin">
+    <link rel="canonical" href="http://ilovesweetangel.github.io/">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -54,9 +56,9 @@
     <div class="header">
       <div class="container">
         <ul>
-          <li class="wow zoomInLeft" data-wow-duration="2s" data-wow-delay="2s"><a href="http://nguyentrungtin.github.io">I...</a></li>
-          <li class="wow pulse" data-wow-duration="0.5s" data-wow-delay="4s" data-wow-iteration="1000000"><a href="/"><i class="fa fa-heart fa-3x"></i></a></li>
-          <li class="wow zoomInRight" data-wow-duration="2s" data-wow-delay="5s"><a href="html/sweetangel.html">Sweet Angel</a></li>
+          <li class="wow zoomInLeft" data-wow-duration="2s" data-wow-delay="0.5s"><a href="http://nguyentrungtin.github.io">I...</a></li>
+          <li class="wow pulse" data-wow-duration="0.5s" data-wow-delay="2.5s" data-wow-iteration="1000000"><a href="/"><i class="fa fa-heart fa-3x"></i></a></li>
+          <li class="wow zoomInRight" data-wow-duration="2s" data-wow-delay="3s"><a href="html/sweetangel.html">Sweet Angel</a></li>
         </ul>
       </div>
     </div>
@@ -76,19 +78,19 @@
           <table class="wow zoomIn" data-wow-duration="2s" data-wow-delay="15s">
             <tr class="wow zoomInDown" data-wow-duration="2s" data-wow-delay="17s">
               <td>
-                Lovely
+                <a class="ajax-popup-link" href=""><i></i> Lovely <i></i></a>
               </td>
               <td>
-                Beautiful
+                <a class="ajax-popup-link" href=""><i></i> Beautiful <i></i></a>
               </td>
             </tr>
 
             <tr class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="17s">
               <td>
-                Smile
+                <a class="ajax-popup-link" href="html/smile.html"><i></i> Smile <i></i></a>
               </td>
               <td>
-                Sweet
+                <a class="ajax-popup-link" href="html/sweetangel.html"><i></i> Sweet <i></i></a>
               </td>
             </tr>
           </table>
@@ -99,7 +101,7 @@
     <div class="footer">
       <div class="container">
         <p>
-          I <i class="fa fa-heart"></i> Sweet Angel
+          <a href="http://nguyentrungtin.github.io">I</a> <i class="fa fa-heart"></i> Sweet Angel !
         </p>
       </div>
     </div>
@@ -111,8 +113,54 @@
 
     <!-- WOW.js -->
     <script type="text/javascript" src="js/wow.min.js"></script>
+
+    <script type="text/javascript" src="js/magnificPopup.js"></script>
+
     <script>
       new WOW().init();
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("td a").hover(function() {
+          $(this).each(function() {
+              $(this).find("i").toggleClass("fa fa-heart red");
+            });
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $('.ajax-popup-link').magnificPopup({
+        type: 'ajax'
+      });
+
+      ajax: {
+      settings: null, // Ajax settings object that will extend default one - http://api.jquery.com/jQuery.ajax/#jQuery-ajax-settings
+      // For example:
+      // settings: {cache:false, async:false}
+
+      cursor: 'mfp-ajax-cur', // CSS class that will be added to body during the loading (adds "progress" cursor)
+      tError: '<a href="%url%">The content</a> could not be loaded.' //  Error message, can contain %curr% and %total% tags if gallery is enabled
+      }
+
+      callbacks: {
+        parseAjax: function(mfpResponse) {
+    // mfpResponse.data is a "data" object from ajax "success" callback
+    // for simple HTML file, it will be just String
+    // You may modify it to change contents of the popup
+    // For example, to show just #some-element:
+    // mfpResponse.data = $(mfpResponse.data).find('#some-element');
+
+    // mfpResponse.data must be a String or a DOM (jQuery) element
+
+      console.log('Ajax content loaded:', mfpResponse);
+    },
+      ajaxContentAdded: function() {
+    // Ajax content is loaded and appended to DOM
+      console.log(this.content);
+    }
+    }
     </script>
 
   </body>
