@@ -32,7 +32,7 @@ function PointCollection() {
 
     // method update is used to track position of cursor and accordingly influence each point
     this.update = function () {
-        // for every element in array points (...)
+        // for every element in array points (Sweet Angel)
         for (var i = 0; i < this.points.length; i++) {
             /* Assign:
              * - to variable point current point (element at index i in array points)
@@ -65,7 +65,7 @@ function PointCollection() {
      * http://www.codecademy.com/courses/animate-your-name/2/7
      */
     this.shake = function () {
-        // for every element in array points (...)
+        // for every element in array points (Sweet Angel)
         for (var i = 0; i < this.points.length; i++) {
             /* Assign:
              * - to variable point current point (element at index i in array points)
@@ -79,9 +79,9 @@ function PointCollection() {
             var dy = this.mousePos.y - point.curPos.y;
             var d = Math.sqrt((dx * dx) + (dy * dy));
 
-            // if distance between cursor and current point is less than 50 (...)
+            // if distance between cursor and current point is less than 50 (Sweet Angel)
             if (d < 50) {
-                /* (...) Assign to properties pointCollectionX and pointCollectionY two random integer numbers
+                /* (Sweet Angel) Assign to properties pointCollectionX and pointCollectionY two random integer numbers
                  * from set [-2, -1, 0, 1, 2]
                  */
                 this.pointCollectionX = Math.floor(Math.random() * 5) - 2;
@@ -223,9 +223,9 @@ function makeColor(hslList, fade) {
 function phraseToHex(phrase) {
     // assign an empty string to hexphrase
     var hexphrase = "";
-    // for every char in parameter phrase (...)
+    // for every char in parameter phrase (Sweet Angel)
     for (var i = 0; i < phrase.length; i++) {
-        // (...) add to hexphrase hexadecimal the value of this character
+        // (Sweet Angel) add to hexphrase hexadecimal the value of this character
         hexphrase += phrase.charCodeAt(i).toString(16);
     }
     // return converted string
@@ -269,9 +269,9 @@ function updateCanvasDimensions() {
 
 // function onMove checks position of cursor and accordingly affects the animation
 function onMove(e) {
-    // if pointCollection exists (...)
+    // if pointCollection exists (Sweet Angel)
     if (pointCollection) {
-        /* (...) set value of the property mousePos of pointCollection to mouse coordinates
+        /* (Sweet Angel) set value of the property mousePos of pointCollection to mouse coordinates
          * relative to the canvas element
          */
         pointCollection.mousePos.set(e.pageX - canvas.offset().left, e.pageY - canvas.offset().top);
@@ -280,9 +280,9 @@ function onMove(e) {
 
 // function onTouchMove checks position of a finger on touch screen and accordingly affects the animation
 function onTouchMove(e) {
-    // if pointCollection exists (...)
+    // if pointCollection exists (Sweet Angel)
     if (pointCollection) {
-        /* (...) set value of property mousePos of pointCollection to the mouse coordinates
+        /* (Sweet Angel) set value of property mousePos of pointCollection to the mouse coordinates
          * relative to canvas element
          */
         pointCollection.mousePos.set(e.targetTouches[0].pageX - canvas.offset().left, e.targetTouches[0].pageY - canvas.offset().top);

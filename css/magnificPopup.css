@@ -372,3 +372,20 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+/* Just for Popup */
+.pink-popup {
+  position: relative;
+  background: pink;
+  padding: 20px;
+  width: auto;
+  max-width: 550px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Just for inside popup */
+.pink-popup h4 {
+  color: white;
+  margin: 0px 0px 20px 0px;
+}

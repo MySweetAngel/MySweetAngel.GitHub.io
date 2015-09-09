@@ -48,7 +48,7 @@ body {
   font-size: 25px;
 }
 
-.main a {
+.main a, .main a:visited {
   text-decoration: none;
 }
 
