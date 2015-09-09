@@ -59,27 +59,27 @@
     <div class="header">
       <div class="container">
         <ul>
-          <li class="wow zoomInLeft" data-wow-duration="2s" data-wow-delay="0.5s"><a href="http://nguyentrungtin.github.io">I...</a></li>
+          <li class="wow zoomInLeft" data-wow-duration="2s" data-wow-delay="0.5s"><a href="http://nguyentrungtin.github.io" target="_blank">I...</a></li>
           <li class="wow pulse" data-wow-duration="0.5s" data-wow-delay="2.5s" data-wow-iteration="1000000"><a href="/"><i class="fa fa-heart fa-3x"></i></a></li>
-          <li class="wow zoomInRight" data-wow-duration="2s" data-wow-delay="3s"><a href="html/sweetangel.html">Sweet Angel</a></li>
+          <li class="wow zoomInRight" data-wow-duration="2s" data-wow-delay="3s"><a href="html/sweetangel.html" target="_blank">Sweet Angel</a></li>
         </ul>
       </div>
     </div>
 
     <div class="think">
       <div class="container">
-        <h3 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="7s">People will forget what you said.</h3>
-        <h3 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="9s">People will forget what you did.</h3>
-        <h3 class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="11s">But people will NEVER forget how you make them feel!</h3>
+        <h3 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">People will forget what you said.</h3>
+        <h3 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="7s">People will forget what you did.</h3>
+        <h3 class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="9s">But people will NEVER forget how you make them feel!</h3>
       </div>
     </div>
 
     <div class="main">
       <div class="container">
-        <h2 class="wow zoomIn" data-wow-duration="2s" data-wow-delay="13s"><a href="html/sweetangel.html">Her...</a></h2>
+        <h2 class="wow zoomIn" data-wow-duration="2s" data-wow-delay="11s"><a href="html/sweetangel.html" target="_blank">Her...</a></h2>
 
-          <table class="wow zoomIn" data-wow-duration="2s" data-wow-delay="15s">
-            <tr class="wow zoomInDown" data-wow-duration="2s" data-wow-delay="17s">
+          <table class="wow zoomIn" data-wow-duration="2s" data-wow-delay="13s">
+            <tr class="wow zoomInDown" data-wow-duration="2s" data-wow-delay="15s">
               <td>
                 <a class="open-popup-link" href="#lovely"><i></i> Lovely <i></i></a>
 
@@ -208,7 +208,7 @@
               </td>
             </tr>
 
-            <tr class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="17s">
+            <tr class="wow zoomInUp" data-wow-duration="2s" data-wow-delay="15s">
               <td>
                 <a class="open-popup-link" href="#smile"><i></i> Smile <i></i></a>
 
@@ -281,6 +281,7 @@
                     <ol class="carousel-indicators">
                       <li data-target="#carousel-sweet" data-slide-to="0" class="active"></li>
                       <li data-target="#carousel-sweet" data-slide-to="1"></li>
+                      <li data-target="#carousel-sweet" data-slide-to="2"></li>
                       <li data-target="#carousel-sweet" data-slide-to="3"></li>
                       <li data-target="#carousel-sweet" data-slide-to="4"></li>
                       <li data-target="#carousel-sweet" data-slide-to="5"></li>
@@ -294,13 +295,17 @@
 
                       <div class="item active">
                         <div class="embed-responsive embed-responsive-16by9">
-                          <iframe class="embed-responsive-item" src="lib/videos/SweetAngel.mp4"></iframe>
+                          <video class="embed-responsive-item" controls>
+                            <source src="lib/videos/SweetAngel.mp4" type="video/mp4">
+                          </video>
                         </div>
                       </div>
 
                       <div class="item">
                         <div class="embed-responsive embed-responsive-16by9">
-                          <iframe class="embed-responsive-item" src="lib/videos/Angel.mp4"></iframe>
+                          <video class="embed-responsive-item" controls>
+                            <source src="lib/videos/Angel.mp4" type="video/mp4">
+                          </video>
                         </div>
                       </div>
 
@@ -358,7 +363,7 @@
     <div class="footer">
       <div class="container">
         <p>
-          <a href="http://nguyentrungtin.github.io">I</a> <i class="fa fa-heart"></i> Sweet Angel !
+          <a href="http://nguyentrungtin.github.io" target="_blank">I</a> <i class="fa fa-heart"></i> Sweet Angel !
         </p>
       </div>
     </div>
@@ -390,9 +395,9 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $('.open-popup-link').magnificPopup({
-      type:'inline',
-      midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-    });
+          type:'inline',
+          midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
       });
     </script>
 
