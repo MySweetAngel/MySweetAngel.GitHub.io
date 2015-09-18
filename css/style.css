@@ -56,6 +56,15 @@ body {
   color: red;
   font-size: 15px;
 }
+
+.main a i.fa-heart {
+  color: red;
+}
+
+.main .letter{
+  margin-top: 80px;
+  font-size: 20px;
+}
 /* TODO: Just for footer */
 .footer {
   padding: 50px;
@@ -65,7 +74,7 @@ body {
   font-size: 20px;
 }
 
-.footer p i {
+.footer p i.fa-heart {
   color: red;
 }
 
