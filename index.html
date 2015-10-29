@@ -29,9 +29,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>I Love Sweet Angel</title>
+    <meta name="description" content="Điền Thị Ngọc Linh - Sweet Angel in my heart - From Ông Trùm with love"  >
+    <meta name="keywords" content="I Love Sweet Angel, Sweet Angel, Ngọc Linh, Điền Thị Ngọc Linh,  Điền Ngọc Linh, Mikan Sakura, Ông Trùm, I fall in love">
     <link rel="icon" type="image/jpg" href="lib/images/SweetAngel.jpg">
     <meta name="author" content="Nguyen Trung Tin">
-    <link rel="canonical" href="http://mysweetangel.github.io/">
+    <link rel="canonical" href="http://ilovesweetangel.github.io/">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -76,7 +78,7 @@
 
     <div class="main">
       <div class="container">
-        <h2 class="wow zoomIn" data-wow-duration="2s" data-wow-delay="11s"><a href="html/sweetangel.html" target="_blank">Her...</a></h2>
+        <h2 class="wow zoomIn" data-wow-duration="2s" data-wow-delay="11s"><a href="html/sweetangel.html" target="_blank">Sweet Angel...</a></h2>
 
           <table class="wow zoomIn" data-wow-duration="2s" data-wow-delay="13s">
             <tr class="wow zoomInDown" data-wow-duration="2s" data-wow-delay="15s">
@@ -162,6 +164,7 @@
                         <li data-target="#carousel-beautiful" data-slide-to="3"></li>
                         <li data-target="#carousel-beautiful" data-slide-to="4"></li>
                         <li data-target="#carousel-beautiful" data-slide-to="5"></li>
+                        <li data-target="#carousel-beautiful" data-slide-to="6"></li>
                       </ol>
 
                       <!-- Wrapper for slides -->
@@ -188,6 +191,10 @@
 
                         <div class="item">
                           <img class="img-responsive" src="lib/images/angel-16.jpg" alt="Sweet Angel">
+                        </div>
+
+                        <div class="item">
+                          <img class="img-responsive" src="lib/images/Beautiful-in-white.jpg" alt="Sweet Angel">
                         </div>
 
                         </div>
@@ -225,6 +232,7 @@
                         <li data-target="#carousel-smile" data-slide-to="3"></li>
                         <li data-target="#carousel-smile" data-slide-to="4"></li>
                         <li data-target="#carousel-smile" data-slide-to="5"></li>
+                        <li data-target="#carousel-smile" data-slide-to="6"></li>
                       </ol>
 
                       <!-- Wrapper for slides -->
@@ -251,6 +259,10 @@
 
                         <div class="item">
                           <img class="img-responsive" src="lib/images/angel-3.jpg" alt="Sweet Angel">
+                        </div>
+
+                        <div class="item">
+                          <img class="img-responsive" src="lib/images/Angel-Smile.jpg" alt="Sweet Angel">
                         </div>
 
                         </div>
@@ -303,13 +315,8 @@
                       </div>
 
                       <div class="item">
-                        <div class="embed-responsive embed-responsive-16by9">
-                          <video class="embed-responsive-item" controls>
-                            <source src="lib/videos/Angel.mp4" type="video/mp4">
-                          </video>
-                        </div>
+                        <img class="img-responsive" src="lib/images/Angel-in-yellow.jpg" alt="Sweet Angel">
                       </div>
-
 
                       <div class="item">
                         <img class="img-responsive" src="lib/images/SweetAngel.jpg" alt="Sweet Angel">
@@ -362,7 +369,11 @@
             </tr>
           </table>
           <div class="letter">
-            <a class="loveletter" href="html/loveletter.html" target="_blank"><i class="fa fa-heart wow pulse" data-wow-duration="0.5s" data-wow-iteration="1000000"></i> Love Letter <i class="fa fa-heart wow pulse" data-wow-duration="0.5s" data-wow-iteration="1000000"></i></a>
+            <a class="loveletter" href="html/loveletter.html" target="_blank">---<i class="fa fa-heartbeat wow pulse" data-wow-duration="0.5s" data-wow-iteration="1000000"></i> Love Letter <i class="fa fa-heartbeat wow pulse" data-wow-duration="0.5s" data-wow-iteration="1000000"></i>---</a>
+          </div>
+
+          <div class="notes">
+            <a href="html/notes.html" target="_blank"> /* --- <i></i> Notes for Sweet Angel <i></i> --- */</a>
           </div>
 
       </div>
@@ -397,7 +408,20 @@
               $(this).find("i").toggleClass("fa fa-heart red");
             });
         });
+        $(".notes a").hover(function() {
+          $(this).find("i").toggleClass("fa fa-heartbeat red");
+        });
       });
+    </script>
+
+    <script type="text/javascript">
+    if ($(window).width() <= 640) {
+        $(document).ready(function() {
+          $(".main h2").attr("data-wow-delay", "0s");
+          $(".main table").attr("data-wow-delay", "2s");
+          $(".main table tr").attr("data-wow-delay", "4s");
+        });
+      };
     </script>
 
     <script type="text/javascript">

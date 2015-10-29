@@ -1,6 +1,17 @@
 body {
   font-family: 'Dancing Script', cursive;
   text-align: center;
+  outline-style: none;
+}
+
+a:focus {
+  outline-style: none;
+  outline: 0;
+}
+
+@font-face {
+  font-family: RoundhandScript;
+  src: url(../font/RoundhandScriptBold.ttf);
 }
 
 /* TODO: Just for Header */
@@ -29,18 +40,32 @@ body {
 }
 
 .main h2 {
+  font-family: 'RoundhandScript', cursive;
   font-size: 35px;
   margin-bottom: 40px;
 }
+
+.main h2 a {
+  color: violet;
+}
+
+.main h2 a:hover {
+  color: blueviolet;
+}
+
 .main table {
   margin: auto;
 }
 .main table tr:first-child {
-  border-bottom: solid black 1px;
+  border-bottom: solid #3e1e68 1px;
 }
 
 .main table td:first-child {
-  border-right: solid black 1px;
+  border-right: solid #3e1e68 1px;
+}
+
+.main table td a {
+  color: #302579;
 }
 
 .main table td {
@@ -61,10 +86,41 @@ body {
   color: red;
 }
 
+.main a i.fa-heartbeat {
+  color: red;
+}
+
 .main .letter{
   margin-top: 80px;
+  font-size: 22px;
+}
+
+.main .letter a {
+  color: #e45a84;
+}
+
+.main .letter a:hover {
+  color: violet;
+}
+
+.notes a i.red {
+  color: red;
   font-size: 20px;
 }
+
+/* TODO: Just for notes */
+.notes {
+  margin-top: 25px;
+}
+.notes a {
+  color: blueviolet;
+  font-size: 25px;
+}
+
+.notes a:hover {
+  color: violet;
+}
+
 /* TODO: Just for footer */
 .footer {
   padding: 50px;
@@ -79,6 +135,27 @@ body {
 }
 
 .footer a {
-  color: black;
+  color: #3e1e68;
   text-decoration: none;
+}
+
+.footer a:hover {
+  color: blueviolet;
+}
+
+@media only screen and (max-width: 320px) {
+  .think h3 {
+    font-size: 23px;
+  }
+  .main h2 {
+    font-size: 30px;
+  }
+
+  .loveletter {
+    font-size: 20px;
+  }
+
+  .notes a {
+    font-size: 23px;
+  }
 }
